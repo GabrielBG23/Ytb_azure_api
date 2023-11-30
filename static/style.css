@@ -1,0 +1,78 @@
+/* Reset de margem e padding */
+* {
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    display: none; /* Esconde as informações inicialmente */
+}
+
+.container.show {
+    display: grid; /* Mostra as informações ao clicar no botão */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.description {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 1.5;
+    white-space: pre-line; /* Mantém a formatação de quebras de linha */
+}
+
+.description p {
+    margin: 10px 0;
+}
+
+.info-block {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

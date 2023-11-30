@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Vídeo do YouTube</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Detalhes do Vídeo do YouTube</h1>
+    <input type="text" id="videoId" placeholder="ID do Vídeo do YouTube"><br><br>
+    <button onclick="getVideoDetails()">Obter Detalhes</button><br><br>
+
+    <div class="container">
+        <div class="info-block" id="title"></div>
+        <div class="info-block" id="channel"></div>
+        <div class="info-block description" id="description"></div>
+        <div class="info-block" id="publishedAt"></div>
+        <div class="info-block" id="tags"></div>
+        <div class="info-block" id="views"></div>
+        <div class="info-block" id="likes"></div>
+        <div class="info-block" id="dislikes"></div>
+        <div class="info-block" id="comments"></div>
+        <div class="info-block" id="videoUrl"></div>
+        <div class="info-block" id="duration"></div>
+        <div id="videoPlayer"></div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
