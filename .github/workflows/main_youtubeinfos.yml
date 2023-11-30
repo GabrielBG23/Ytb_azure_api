@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'youtubeinfos'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E517CBADDDC14FB28940D054612B9995 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_62B7DAEC2FB24E7AB98DE5C006EE5CB9 }}
